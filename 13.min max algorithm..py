@@ -23,7 +23,12 @@ targetDepth):
       True, scores, targetDepth))
   
   # Driver code
-scores = [3, 5, 2, 9, 12, 5, 23, 23]
+scores = []
+n=int(eval(input("enter the noof numbers::")))
+print("enter values::")
+for i in range(n):
+    no=eval(input())
+    scores.append(no)
 treeDepth = math.log(len(scores), 2)
 print("The optimal value is : ", end = "")
 print(minimax(0, 0, True, scores, treeDepth))
